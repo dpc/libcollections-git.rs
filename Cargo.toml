@@ -1,0 +1,16 @@
+[package]
+name = "collections"
+version = "0.0.1"
+description = "Fetch and build libcollections"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+build = "build.rs"
+
+[lib]
+name = "collections"
+path = "./rust/src/libcollections/lib.rs"
+
+[dependencies.core]
+git = "https://github.com/dpc/libcore-git.rs.git"
+
+[dependencies.unicode]
+git = "https://github.com/dpc/libunicode-git.rs.git"
